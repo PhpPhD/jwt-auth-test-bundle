@@ -1,0 +1,16 @@
+<?php
+
+namespace Symfony\Component\Security\Core\User;
+
+use Symfony\Component\Security\Core\Exception\UserNotFoundException;
+
+/** @template-covariant TUser of UserInterface */
+interface UserProviderInterface
+{
+    /**
+     * @return TUser
+     *
+     * @throws UserNotFoundException
+     */
+    public function loadUserByIdentifier(string $identifier): UserInterface;
+}

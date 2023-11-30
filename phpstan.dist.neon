@@ -1,0 +1,17 @@
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+
+parameters:
+    level: 9
+    phpVersion: 80002
+    editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+    stubFiles:
+        - static-analysis/stub/UserProviderInterface.phpstub
+        - static-analysis/stub/phpstan/UserInterface.phpstub
+        - static-analysis/stub/phpstan/UserNotFoundException.phpstub
+    excludePaths:
+        analyseAndScan:
+            - vendor
+    fileExtensions:
+        - 'php'
