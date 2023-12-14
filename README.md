@@ -11,7 +11,7 @@ Cases.
 
 ## Quick Start
 
-### Installation ⚒️
+### Installation 📥
 
 1. Install via composer
 
@@ -25,7 +25,7 @@ Cases.
     PhPhD\JwtAuthTestBundle\PhdJwtAuthTestBundle::class => ['test' => true],
     ```
 
-### Configuration 🗜️
+### Configuration ⚒️
 
 Create `phd_jwt_auth_test.yaml` configuration file under `config/packages/test` directory. It's necessary to specify
 service id of application [user provider](https://symfony.com/doc/current/security/user_providers.html) here. If you
