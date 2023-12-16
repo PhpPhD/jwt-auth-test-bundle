@@ -9,6 +9,7 @@ Cases.
 [![Psalm level](https://shepherd.dev/github/phphd/jwt-auth-test-bundle/level.svg)](https://shepherd.dev/github/phphd/jwt-auth-test-bundle)
 [![Psalm coverage](https://shepherd.dev/github/phphd/jwt-auth-test-bundle/coverage.svg)](https://shepherd.dev/github/phphd/jwt-auth-test-bundle)
 [![Codecov](https://codecov.io/gh/phphd/jwt-auth-test-bundle/graph/badge.svg?token=GZRXWYT55Z)](https://codecov.io/gh/phphd/jwt-auth-test-bundle)
+[![Total Downloads](https://img.shields.io/packagist/dt/phphd/jwt-auth-test-bundle.svg?style=flat-square)](https://packagist.org/packages/phphd/jwt-auth-test-bundle)
 [![Licence](https://img.shields.io/github/license/phphd/jwt-auth-test-bundle.svg)](https://github.com/phphd/jwt-auth-test-bundle/blob/main/LICENSE)
 
 ## Quick Start
