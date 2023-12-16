@@ -6,6 +6,8 @@ integrates [Lexik JWT Authentication Bundle](https://github.com/lexik/LexikJWTAu
 Cases.
 
 [![Build Status](https://github.com/phphd/jwt-auth-test-bundle/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/phphd/jwt-auth-test-bundle/actions?query=branch%3Amain)
+[![Psalm level](https://shepherd.dev/github/phphd/jwt-auth-test-bundle/level.svg)](https://shepherd.dev/github/phphd/jwt-auth-test-bundle)
+[![Psalm coverage](https://shepherd.dev/github/phphd/jwt-auth-test-bundle/coverage.svg)]
 [![Codecov](https://codecov.io/gh/phphd/jwt-auth-test-bundle/graph/badge.svg?token=GZRXWYT55Z)](https://codecov.io/gh/phphd/jwt-auth-test-bundle)
 [![Licence](https://img.shields.io/github/license/phphd/jwt-auth-test-bundle.svg)](https://github.com/phphd/jwt-auth-test-bundle/blob/main/LICENSE)
 
