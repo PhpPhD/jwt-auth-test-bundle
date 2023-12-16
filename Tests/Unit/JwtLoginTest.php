@@ -5,16 +5,15 @@ declare(strict_types=1);
 namespace PhPhD\JwtAuthTestBundle\Tests\Unit;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
+use PhPhD\JwtAuthTestBundle\Authenticator\JwtLoginTrait;
 use PhPhD\JwtAuthTestBundle\Authenticator\TestAuthenticator;
-use PhPhD\JwtAuthTestBundle\Test\JwtLoginTrait;
-use PHPUnit\Framework\MockObject\Exception;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 /**
- * @covers \PhPhD\JwtAuthTestBundle\Test\JwtLoginTrait
+ * @covers \PhPhD\JwtAuthTestBundle\Authenticator\JwtLoginTrait
  * @covers \PhPhD\JwtAuthTestBundle\Authenticator\TestAuthenticator
  *
  * @internal
@@ -23,7 +22,6 @@ final class JwtLoginTest extends KernelTestCase
 {
     use JwtLoginTrait;
 
-    /** @throws Exception */
     protected function setUp(): void
     {
         parent::setUp();
