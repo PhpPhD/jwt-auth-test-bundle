@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\JwtAuthTestBundle\Tests\Unit;
+namespace PhPhD\JwtAuthTest\Tests\Unit;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
-use PhPhD\JwtAuthTestBundle\Authenticator\JwtLoginTrait;
-use PhPhD\JwtAuthTestBundle\Authenticator\TestAuthenticator;
+use PhPhD\JwtAuthTest\Authenticator\TestAuthenticator;
+use PhPhD\JwtAuthTest\JwtLoginTrait;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 /**
- * @covers \PhPhD\JwtAuthTestBundle\Authenticator\JwtLoginTrait
- * @covers \PhPhD\JwtAuthTestBundle\Authenticator\TestAuthenticator
+ * @covers \PhPhD\JwtAuthTest\JwtLoginTrait
+ * @covers \PhPhD\JwtAuthTest\Authenticator\TestAuthenticator
  *
  * @internal
  */

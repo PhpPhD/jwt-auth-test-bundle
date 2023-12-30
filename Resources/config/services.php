@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use PhPhD\JwtAuthTestBundle\Authenticator\TestAuthenticator;
+use PhPhD\JwtAuthTest\Authenticator\TestAuthenticator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 

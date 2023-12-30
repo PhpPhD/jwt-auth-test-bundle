@@ -48,7 +48,7 @@ In your Api Test class use `JwtLoginTrait` and `login` method to handle authenti
 ```php
 use ApiPlatform\Symfony\Bundle\Test\ApiTestCase;
 use ApiPlatform\Symfony\Bundle\Test\Client;
-use PhPhD\JwtAuthTestBundle\Authenticator\JwtLoginTrait;
+use PhPhD\JwtAuthTest\JwtLoginTrait;
 
 final class ExampleProtectedApiTest extends ApiTestCase
 {

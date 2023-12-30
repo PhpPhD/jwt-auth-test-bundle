@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\JwtAuthTestBundle\Authenticator;
+namespace PhPhD\JwtAuthTest;
 
+use PhPhD\JwtAuthTest\Authenticator\TestAuthenticator;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

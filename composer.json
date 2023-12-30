@@ -41,15 +41,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "PhPhD\\JwtAuthTestBundle\\": ""
+            "PhPhD\\JwtAuthTestBundle\\": "",
+            "PhPhD\\JwtAuthTest\\": "src/"
         },
         "exclude-from-classmap": [
-            "/Tests/"
+            "/tests/"
         ]
     },
     "autoload-dev": {
+        "psr-4": {
+            "PhPhD\\JwtAuthTest\\Tests\\": "tests/"
+        },
         "files": [
-            "Tests/aliases.php"
+            "tests/aliases.php"
         ]
     },
     "scripts": {
