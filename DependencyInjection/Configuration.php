@@ -30,7 +30,7 @@ final class Configuration implements ConfigurationInterface
 
     private function authenticatorsDefinition(): NodeDefinition
     {
-        $treeBuilder = new TreeBuilder('authenticators');
+        $treeBuilder = new TreeBuilder('jwt_authenticators');
 
         /** @var ArrayNodeDefinition $authenticatorsNode */
         $authenticatorsNode = $treeBuilder->getRootNode();

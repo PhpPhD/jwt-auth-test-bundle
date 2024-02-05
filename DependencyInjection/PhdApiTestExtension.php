@@ -17,7 +17,7 @@ final class PhdApiTestExtension extends AbstractExtension
     /**
      * @psalm-suppress MoreSpecificImplementedParamType
      *
-     * @param array<array-key,array{authenticators:mixed}> $config
+     * @param array<array-key,array{jwt_authenticators:mixed}> $config
      *
      * @override
      *
@@ -25,7 +25,7 @@ final class PhdApiTestExtension extends AbstractExtension
      */
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
-        $builder->setParameter('phd_api_test.config.authenticators', $config['authenticators']);
+        $builder->setParameter('phd_api_test.config.jwt_authenticators', $config['jwt_authenticators']);
 
         $container->import(__DIR__.'/../Resources/config/services.php');
     }

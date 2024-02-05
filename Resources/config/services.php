@@ -12,7 +12,7 @@ return static function (ContainerConfigurator $container, ContainerBuilder $buil
     $services = $container->services();
 
     /** @var array<string,array{user_provider:string}> $authenticatorsConfig */
-    $authenticatorsConfig = $builder->getParameter('phd_api_test.config.authenticators');
+    $authenticatorsConfig = $builder->getParameter('phd_api_test.config.jwt_authenticators');
 
     foreach ($authenticatorsConfig as $name => $authenticator) {
         $services

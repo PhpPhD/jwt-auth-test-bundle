@@ -36,7 +36,7 @@ have only one authenticated user entity (hence, one provider), use current defau
 
 ```yaml
 phd_api_test:
-    authenticators:
+    jwt_authenticators:
         -   name: default
             user_provider: security.user_providers
 ```
@@ -88,7 +88,7 @@ in the same configuration file by different name:
 
 ```yaml
 phd_api_test:
-    authenticators:
+    jwt_authenticators:
         -   name: admin
             user_provider: security.user.provider.concrete.api_admin_user_provider
 ```
