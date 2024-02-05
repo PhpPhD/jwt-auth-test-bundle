@@ -14,6 +14,8 @@ parameters:
     excludePaths:
         analyseAndScan:
             - vendor
+            - rector.php
+            - ecs.php
     type_coverage:
         return_type: 100
         param_type: 100

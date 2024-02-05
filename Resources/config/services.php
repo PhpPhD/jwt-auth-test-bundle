@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use PhPhD\JwtAuthTest\Authenticator\TestAuthenticator;
+use PhPhD\ApiTest\Authenticator\TestJwtAuthenticator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
@@ -12,11 +12,11 @@ return static function (ContainerConfigurator $container, ContainerBuilder $buil
     $services = $container->services();
 
     /** @var array<string,array{user_provider:string}> $authenticatorsConfig */
-    $authenticatorsConfig = $builder->getParameter('phd_jwt_auth_test.config.authenticators');
+    $authenticatorsConfig = $builder->getParameter('phd_api_test.config.authenticators');
 
     foreach ($authenticatorsConfig as $name => $authenticator) {
         $services
-            ->set('phd_jwt_auth_test.authenticator.'.$name, TestAuthenticator::class)
+            ->set('phd_api_test.jwt_authenticator.'.$name, TestJwtAuthenticator::class)
             ->public()
             ->args([
                 service($authenticator['user_provider']),

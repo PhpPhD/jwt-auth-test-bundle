@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
-use PhPhD\JwtAuthTest\Tests\Unit\Stub\Outlet\KernelTestCaseStub;
+use PhPhD\ApiTest\Tests\Unit\Stub\Outlet\KernelTestCaseStub;
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-\class_alias(KernelTestCaseStub::class, Symfony\Bundle\FrameworkBundle\Test\KernelTestCase::class);
+\class_alias(KernelTestCaseStub::class, KernelTestCase::class);

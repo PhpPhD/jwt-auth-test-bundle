@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\JwtAuthTestBundle\DependencyInjection;
+namespace PhPhD\ApiTestBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
@@ -13,7 +13,7 @@ final class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder(PhdJwtAuthTestExtension::ALIAS);
+        $treeBuilder = new TreeBuilder(PhdApiTestExtension::ALIAS);
 
         /** @var ArrayNodeDefinition $rootNode */
         $rootNode = $treeBuilder->getRootNode();

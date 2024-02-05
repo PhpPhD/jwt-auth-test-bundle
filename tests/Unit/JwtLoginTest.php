@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\JwtAuthTest\Tests\Unit;
+namespace PhPhD\ApiTest\Tests\Unit;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
-use PhPhD\JwtAuthTest\Authenticator\TestAuthenticator;
-use PhPhD\JwtAuthTest\JwtLoginTrait;
+use PhPhD\ApiTest\Authenticator\TestJwtAuthenticator;
+use PhPhD\ApiTest\JwtLoginTrait;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 /**
- * @covers \PhPhD\JwtAuthTest\JwtLoginTrait
- * @covers \PhPhD\JwtAuthTest\Authenticator\TestAuthenticator
+ * @covers \PhPhD\ApiTest\JwtLoginTrait
+ * @covers \PhPhD\ApiTest\Authenticator\TestJwtAuthenticator
  *
  * @internal
  */
@@ -56,14 +56,14 @@ final class JwtLoginTest extends KernelTestCase
             ->method('get')
             ->willReturnMap([
                 [
-                    'phd_jwt_auth_test.authenticator.admin',
+                    'phd_api_test.jwt_authenticator.admin',
                     ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE,
-                    new TestAuthenticator($adminUserProvider, $tokenManager),
+                    new TestJwtAuthenticator($adminUserProvider, $tokenManager),
                 ],
                 [
-                    'phd_jwt_auth_test.authenticator.default',
+                    'phd_api_test.jwt_authenticator.default',
                     ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE,
-                    new TestAuthenticator($ordinaryUserProvider, $tokenManager),
+                    new TestJwtAuthenticator($ordinaryUserProvider, $tokenManager),
                 ],
             ])
         ;

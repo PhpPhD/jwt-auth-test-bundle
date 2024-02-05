@@ -4,12 +4,13 @@ declare(strict_types=1);
 
 use PhPhD\CodingStandard\ValueObject\Set\PhdSetList;
 use Rector\Config\RectorConfig;
-use Rector\Core\ValueObject\PhpVersion;
+use Rector\ValueObject\PhpVersion;
 
 return static function (RectorConfig $rectorConfig): void {
+    $rectorConfig->sets([PhdSetList::rector()->getPath()]);
+
     $rectorConfig->paths([__DIR__.'/']);
     $rectorConfig->skip([__DIR__.'/vendor']);
 
-    $rectorConfig->sets([PhdSetList::rector()->getPath()]);
     $rectorConfig->phpVersion(PhpVersion::PHP_80);
 };

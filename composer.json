@@ -1,5 +1,5 @@
 {
-    "name": "phphd/jwt-auth-test-bundle",
+    "name": "phphd/api-test-bundle",
     "description": "JWT Authentication for API testing",
     "type": "library",
     "license": "MIT",
@@ -28,7 +28,7 @@
         "phpstan/phpstan": "^1.10",
         "vimeo/psalm": "^5.16",
         "psalm/plugin-phpunit": "^0.18.4",
-        "phphd/coding-standard": "0.4.*",
+        "phphd/coding-standard": "0.5.*",
         "phpunit/phpunit": "^9.4",
         "phpstan/phpstan-phpunit": "^1.3",
         "tomasvotruba/type-coverage": "^0.2.1"
@@ -41,8 +41,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "PhPhD\\JwtAuthTestBundle\\": "",
-            "PhPhD\\JwtAuthTest\\": "src/"
+            "PhPhD\\ApiTestBundle\\": "",
+            "PhPhD\\ApiTest\\": "src/"
         },
         "exclude-from-classmap": [
             "/tests/"
@@ -50,7 +50,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "PhPhD\\JwtAuthTest\\Tests\\": "tests/"
+            "PhPhD\\ApiTest\\Tests\\": "tests/"
         },
         "files": [
             "tests/aliases.php"

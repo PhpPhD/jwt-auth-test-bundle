@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\JwtAuthTest\Authenticator;
+namespace PhPhD\ApiTest\Authenticator;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
-final class TestAuthenticator
+final class TestJwtAuthenticator
 {
     /**
      * @template TUser of UserInterface

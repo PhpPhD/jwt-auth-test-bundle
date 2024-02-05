@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\JwtAuthTestBundle\DependencyInjection;
+namespace PhPhD\ApiTestBundle\DependencyInjection;
 
 use Exception;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -10,9 +10,9 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\AbstractExtension;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 
-final class PhdJwtAuthTestExtension extends AbstractExtension
+final class PhdApiTestExtension extends AbstractExtension
 {
-    public const ALIAS = 'phd_jwt_auth_test';
+    public const ALIAS = 'phd_api_test';
 
     /**
      * @psalm-suppress MoreSpecificImplementedParamType
@@ -25,7 +25,7 @@ final class PhdJwtAuthTestExtension extends AbstractExtension
      */
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
-        $builder->setParameter('phd_jwt_auth_test.config.authenticators', $config['authenticators']);
+        $builder->setParameter('phd_api_test.config.authenticators', $config['authenticators']);
 
         $container->import(__DIR__.'/../Resources/config/services.php');
     }
