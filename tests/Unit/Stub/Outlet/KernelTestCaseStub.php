@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\ApiTest\Tests\Unit\Stub\Outlet;
+namespace PhPhD\ApiTesting\Tests\Unit\Stub\Outlet;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;

@@ -1,16 +1,16 @@
-PhdApiTestBundle
+PhdApiTestingBundle
 --------------------
 
 🧰 Provides lightweight jwt authorization utilities for Api Testing in Symfony applications. In essence, this package
 integrates [Lexik JWT Authentication Bundle](https://github.com/lexik/LexikJWTAuthenticationBundle) into your Api Test
 Cases.
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/phphd/api-test-bundle/ci.yaml?branch=main)](https://github.com/phphd/api-test-bundle/actions?query=branch%3Amain)
-[![Codecov](https://codecov.io/gh/phphd/api-test-bundle/graph/badge.svg?token=GZRXWYT55Z)](https://codecov.io/gh/phphd/api-test-bundle)
-[![Psalm coverage](https://shepherd.dev/github/phphd/api-test-bundle/coverage.svg)](https://shepherd.dev/github/phphd/api-test-bundle)
-[![Psalm level](https://shepherd.dev/github/phphd/api-test-bundle/level.svg)](https://shepherd.dev/github/phphd/api-test-bundle)
-[![Total Downloads](https://img.shields.io/packagist/dt/phphd/api-test-bundle.svg?style=flat-square)](https://packagist.org/packages/phphd/api-test-bundle)
-[![Licence](https://img.shields.io/github/license/phphd/api-test-bundle.svg)](https://github.com/phphd/api-test-bundle/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/phphd/api-testing/ci.yaml?branch=main)](https://github.com/phphd/api-testing/actions?query=branch%3Amain)
+[![Codecov](https://codecov.io/gh/phphd/api-testing/graph/badge.svg?token=GZRXWYT55Z)](https://codecov.io/gh/phphd/api-testing)
+[![Psalm coverage](https://shepherd.dev/github/phphd/api-testing/coverage.svg)](https://shepherd.dev/github/phphd/api-testing)
+[![Psalm level](https://shepherd.dev/github/phphd/api-testing/level.svg)](https://shepherd.dev/github/phphd/api-testing)
+[![Total Downloads](https://img.shields.io/packagist/dt/phphd/api-testing.svg?style=flat-square)](https://packagist.org/packages/phphd/api-testing)
+[![Licence](https://img.shields.io/github/license/phphd/api-testing.svg)](https://github.com/phphd/api-testing/blob/main/LICENSE)
 
 ## Quick Start
 
@@ -19,23 +19,23 @@ Cases.
 1. Install via composer
 
     ```sh
-    composer require --dev phphd/api-test-bundle
+    composer require --dev phphd/api-testing
     ```
 
 2. Enable the bundle in the `bundles.php`
 
     ```php
-    PhPhD\ApiTestBundle\PhdApiTestBundle::class => ['test' => true],
+    PhPhD\ApiTestingBundle\PhdApiTestingBundle::class => ['test' => true],
     ```
 
 ### Configuration ⚒️
 
-Create `phd_api_test.yaml` configuration file under `config/packages/test` directory. It's necessary to specify
+Create `phd_api_testing.yaml` configuration file under `config/packages/test` directory. It's necessary to specify
 service id of application [user provider](https://symfony.com/doc/current/security/user_providers.html) here. If you
 have only one authenticated user entity (hence, one provider), use current default configuration.
 
 ```yaml
-phd_api_test:
+phd_api_testing:
     jwt_authenticators:
         -   name: default
             user_provider: security.user_providers
@@ -48,7 +48,7 @@ In your Api Test class use `JwtLoginTrait` and `login` method to handle authenti
 ```php
 use ApiPlatform\Symfony\Bundle\Test\ApiTestCase;
 use ApiPlatform\Symfony\Bundle\Test\Client;
-use PhPhD\ApiTest\JwtLoginTrait;
+use PhPhD\ApiTesting\JwtLoginTrait;
 
 final class ExampleProtectedApiTest extends ApiTestCase
 {
@@ -87,7 +87,7 @@ Nonetheless, in case of conflicting usernames or any other specific reason, you 
 in the same configuration file by different name:
 
 ```yaml
-phd_api_test:
+phd_api_testing:
     jwt_authenticators:
         -   name: admin
             user_provider: security.user.provider.concrete.api_admin_user_provider
