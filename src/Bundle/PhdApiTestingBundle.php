@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\ApiTestingBundle;
+namespace PhPhD\ApiTesting\Bundle;
 
-use PhPhD\ApiTestingBundle\DependencyInjection\PhdApiTestingExtension;
+use PhPhD\ApiTesting\Bundle\DependencyInjection\PhdApiTestingExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /** @api */

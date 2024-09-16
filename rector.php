@@ -9,8 +9,7 @@ use Rector\ValueObject\PhpVersion;
 return static function (RectorConfig $rectorConfig): void {
     $rectorConfig->sets([PhdSetList::rector()->getPath()]);
 
-    $rectorConfig->paths([__DIR__.'/']);
-    $rectorConfig->skip([__DIR__.'/vendor']);
+    $rectorConfig->paths([__DIR__.'/src', __DIR__.'/tests']);
 
     $rectorConfig->phpVersion(PhpVersion::PHP_80);
 };

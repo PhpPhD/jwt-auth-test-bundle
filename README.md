@@ -25,7 +25,7 @@ Cases.
 2. Enable the bundle in the `bundles.php`
 
     ```php
-    PhPhD\ApiTestingBundle\PhdApiTestingBundle::class => ['test' => true],
+    PhPhD\ApiTesting\Bundle\PhdApiTestingBundle::class => ['test' => true],
     ```
 
 ### Configuration ⚒️

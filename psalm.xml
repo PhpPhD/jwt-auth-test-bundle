@@ -9,8 +9,8 @@
         findUnusedCode="true"
 >
     <projectFiles>
-        <directory name="./"/>
-        <file name="PhdApiTestingBundle.php"/>
+        <directory name="src"/>
+        <directory name="tests"/>
         <ignoreFiles>
             <directory name="vendor"/>
         </ignoreFiles>

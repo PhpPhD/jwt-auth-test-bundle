@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\ApiTestingBundle\DependencyInjection;
+namespace PhPhD\ApiTesting\Bundle\DependencyInjection;
 
 use Exception;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

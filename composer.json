@@ -28,7 +28,7 @@
         "phpstan/phpstan": "^1.10",
         "vimeo/psalm": "^5.16",
         "psalm/plugin-phpunit": "^0.18.4",
-        "phphd/coding-standard": "~0.5.1",
+        "phphd/coding-standard": "~0.5.3",
         "phpunit/phpunit": "^9.4",
         "phpstan/phpstan-phpunit": "^1.3",
         "tomasvotruba/type-coverage": "^0.2.1"
@@ -41,7 +41,6 @@
     ],
     "autoload": {
         "psr-4": {
-            "PhPhD\\ApiTestingBundle\\": "",
             "PhPhD\\ApiTesting\\": "src/"
         },
         "exclude-from-classmap": [
