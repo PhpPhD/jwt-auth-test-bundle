@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\ApiTest;
+namespace PhPhD\ApiTesting;
 
-use PhPhD\ApiTest\Authenticator\TestJwtAuthenticator;
+use PhPhD\ApiTesting\Authenticator\TestJwtAuthenticator;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -17,7 +17,7 @@ trait JwtLoginTrait
         $container = self::getContainer();
 
         /** @var TestJwtAuthenticator $testAuthenticator */
-        $testAuthenticator = $container->get('phd_api_test.jwt_authenticator.'.$authenticator);
+        $testAuthenticator = $container->get('phd_api_testing.jwt_authenticator.'.$authenticator);
 
         return $testAuthenticator->authenticateUser($userId);
     }

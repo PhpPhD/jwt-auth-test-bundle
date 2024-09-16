@@ -10,7 +10,7 @@
 >
     <projectFiles>
         <directory name="./"/>
-        <file name="PhdApiTestBundle.php"/>
+        <file name="PhdApiTestingBundle.php"/>
         <ignoreFiles>
             <directory name="vendor"/>
         </ignoreFiles>

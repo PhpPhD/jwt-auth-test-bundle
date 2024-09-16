@@ -1,5 +1,5 @@
 {
-    "name": "phphd/api-test-bundle",
+    "name": "phphd/api-testing",
     "description": "JWT Authentication for API testing",
     "type": "library",
     "license": "MIT",
@@ -41,8 +41,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "PhPhD\\ApiTestBundle\\": "",
-            "PhPhD\\ApiTest\\": "src/"
+            "PhPhD\\ApiTestingBundle\\": "",
+            "PhPhD\\ApiTesting\\": "src/"
         },
         "exclude-from-classmap": [
             "/tests/"
@@ -50,7 +50,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "PhPhD\\ApiTest\\Tests\\": "tests/"
+            "PhPhD\\ApiTesting\\Tests\\": "tests/"
         },
         "files": [
             "tests/aliases.php"
