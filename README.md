@@ -46,7 +46,7 @@ phd_api_testing:
 In your Api Test class use `JwtLoginTrait` and `login` method to handle authentication:
 
 ```php
-use ApiPlatform\Symfony\Bundle\Test\ApiTestCase;use ApiPlatform\Symfony\Bundle\Test\Client;use PhPhD\ApiTesting\Jwt\JwtLoginTrait;
+use PhPhD\ApiTesting\Jwt\JwtLoginTrait;
 
 final class ExampleProtectedApiTest extends ApiTestCase
 {
