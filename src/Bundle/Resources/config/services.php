@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use PhPhD\ApiTesting\Authenticator\TestJwtAuthenticator;
+use PhPhD\ApiTesting\Jwt\TestJwtAuthenticator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 

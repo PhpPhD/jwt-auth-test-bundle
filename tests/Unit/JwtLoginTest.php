@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace PhPhD\ApiTesting\Tests\Unit;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
-use PhPhD\ApiTesting\Authenticator\TestJwtAuthenticator;
-use PhPhD\ApiTesting\JwtLoginTrait;
+use PhPhD\ApiTesting\Jwt\JwtLoginTrait;
+use PhPhD\ApiTesting\Jwt\TestJwtAuthenticator;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 
 /**
- * @covers \PhPhD\ApiTesting\JwtLoginTrait
- * @covers \PhPhD\ApiTesting\Authenticator\TestJwtAuthenticator
+ * @covers \PhPhD\ApiTesting\Jwt\JwtLoginTrait
+ * @covers \PhPhD\ApiTesting\Jwt\TestJwtAuthenticator
  *
  * @internal
  */

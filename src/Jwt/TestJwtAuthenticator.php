@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace PhPhD\ApiTesting\Authenticator;
+namespace PhPhD\ApiTesting\Jwt;
 
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
