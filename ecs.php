@@ -14,7 +14,7 @@ return static function (ECSConfig $ecsConfig): void {
 
     $ecsConfig->skip([
         MethodChainingIndentationFixer::class => [
-            __DIR__.'/DependencyInjection/Configuration.php',
+            __DIR__.'/src/Bundle/DependencyInjection/Configuration.php',
         ],
     ]);
 };
